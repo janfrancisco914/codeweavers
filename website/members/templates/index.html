@@ -1,9 +1,40 @@
+{% load static %}
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage | GearCraftWorks</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'cssjs/index.css' %}">
+</head>
 <body>
+    <header>
+        <div class="logo">
+            <h1>GearCraftWorks</h1>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="{% url 'index' %}">Home</a></li>
+                <li><a href="{% url 'customize' %}">Customize</a></li>
+                <li><a href="{% url 'contact' %}">Contact</a></li>
+                <li><a href="{% url 'about' %}">About Us</a></li>
+                <li><a href="{% url 'logout' %}">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<h1>Hello World!</h1>
-<p>Welcome to my first Django project!</p>
+    <main>
+        <section class="hero">
+            <h2>Welcome to GearCraftWorks</h2>
+            <p>Your one-stop shop for gear customization and more!</p>
+            <a href="{% url 'customize' %}" class="cta-button">Start Customizing</a>
+        </section>
+    </main>
 
+    <footer>
+        <p>&copy; 2024 GearCraftWorks. All rights reserved.</p>
+    </footer>
+
+    <script src="{% static 'cssjs/index.js' %}"></script>
 </body>
 </html>
