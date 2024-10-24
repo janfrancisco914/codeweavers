@@ -1,0 +1,36 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Form Styles */
+.bg-light {
+    background-color: #f8f9fa !important;
+}
+
+.form-floating .form-control {
+    border-radius: 0.5rem;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Contact Cards */
+.feature {
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+}
+
+.feature i {
+    font-size: 2rem;
+}
+
+.text-muted {
+    color: #6c757d !important;
+}
