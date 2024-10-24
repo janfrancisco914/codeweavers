@@ -1,10 +1,11 @@
-document.addEventListener('DOMContentLoaded', function () {
-    console.log("Homepage loaded successfully!");
+const container = document.getElementById('container');
+const registerBtn = document.getElementById('register');
+const loginBtn = document.getElementById('login');
 
-    // Example: Adding click alert to the "Logout" button
-    const logoutButton = document.querySelector("a[href$='logout']");
-    logoutButton.addEventListener('click', function (event) {
-        event.preventDefault();
-        alert("You have logged out successfully.");
-    });
+registerBtn.addEventListener('click', () => {
+    container.classList.add("active");
+});
+
+loginBtn.addEventListener('click', () => {
+    container.classList.remove("active");
 });
