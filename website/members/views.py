@@ -8,13 +8,13 @@ def members(request):
   return HttpResponse(template.render())
 
 def index(request):
-    return render(request, 'index.html')  # Render the home page
+    return render(request, 'index.html')
 
 def customize(request):
-    return render(request, 'customize.html')  # Render the about page
+    return render(request, 'customize.html')
 
 def contact(request):
-    return render(request, 'contact.html')  # Render the contact page
+    return render(request, 'contact.html')
 
 def about(request):
     return render(request, 'about.html') 
