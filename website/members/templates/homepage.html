@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GearCraftWorks | Home</title>
-    <link rel="stylesheet" type="text/css" href="{% static 'cssjs/homepage.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'cssjs/page.css' %}">
 </head>
 <body>
     <header>
@@ -16,7 +16,7 @@
         <a href="{% url 'customize' %}" class="button">Customize</a>
         <a href="{% url 'contact' %}" class="button">Contact</a>
         <a href="{% url 'about' %}" class="button">About Us</a>
-        <a href="{% url 'index' %}" class="button">Logout</a>
+        <a href="{% url 'login' %}" class="button">Logout</a>
     </nav>
     <section class="welcome">
         <h1>Welcome to GearCraftWorks</h1>
@@ -27,7 +27,7 @@
     <section>
         <h1>Customize your own Design!</h1>
         <p>Create your own style of T-Shirts, Pants, and Jerseys!</p>
-        <a href="customize.html" class="customizenow">
+        <a href="{% url 'customize' %}" class="customizenow">
             <span class="button-text">Customize Now!</span>
         </a>
     </section>
