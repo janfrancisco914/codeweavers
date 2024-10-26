@@ -27,3 +27,10 @@ def homepage(request):
 
 def login(request):
     return render(request, 'login.html') 
+
+def resume(request):
+    return render(request, 'resume.html') 
+
+def projects(request):
+    return render(request, 'projects.html')
+ 
