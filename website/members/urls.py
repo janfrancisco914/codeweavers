@@ -1,15 +1,12 @@
+# website/urls.py
 from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('members/', views.members, name='members'),
-    path('contact/', views.contact, name='contact'),
-    path('customize/', views.customize, name='customize'),
-    path('about/', views.about, name='about'),
-    path('services/', views.services, name='services'),
-    path('index/projects', views.index, name='index'),
-    path('homepage/', views.homepage, name='homepage'),
-    path('projects/', views.projects, name='projects'),
+    path('index/', views.index, name='index'),
     path('contact/', views.contact, name='contact'),
     path('resume/', views.resume, name='resume'),
+    path('projects/', views.projects, name='projects'),
+    path('about/', views.about, name='about'),
+    # other paths...
 ]

@@ -2,35 +2,18 @@ from django.http import HttpResponse
 from django.template import loader
 from django.shortcuts import render
 
-
-def members(request):
-  template = loader.get_template('index.html')
-  return HttpResponse(template.render())
-
 def index(request):
     return render(request, 'index.html')
-
-def customize(request):
-    return render(request, 'customize.html')
 
 def contact(request):
     return render(request, 'contact.html')
 
-def about(request):
-    return render(request, 'about.html') 
-
-def services(request):
-    return render(request, 'services.html') 
-
-def homepage(request):
-    return render(request, 'homepage.html') 
-
-def login(request):
-    return render(request, 'login.html') 
-
 def resume(request):
-    return render(request, 'resume.html') 
+    return render(request, 'resume.html')
 
 def projects(request):
     return render(request, 'projects.html')
+
+def about(request):
+    return render(about, 'about.html')
  
