@@ -1,0 +1,126 @@
+/* Reset some default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa; /* Light background */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centering horizontally */
+}
+
+/* Header Styles */
+header {
+    background: #343a40; /* Dark background */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%; /* Make header full width */
+}
+
+/* Navigation Styles */
+nav {
+    background: #495057; /* Darker nav background */
+    text-align: center;
+    padding: 10px 0;
+    width: 100%; /* Make nav full width */
+}
+
+nav a {
+    color: #ffffff; /* White text */
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background 0.3s;
+}
+
+nav a:hover {
+    background: #6c757d; /* Lighter gray on hover */
+}
+
+/* T-Shirt Div Styles */
+#tshirt-div {
+    width: 452px; /* Fixed width to match the T-shirt image */
+    height: 548px; /* Fixed height to match the T-shirt image */
+    background-color: #fff;
+    position: relative;
+    margin: 20px auto; /* Centering the div */
+    border: 1px solid #ccc; /* Optional border for visibility */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Hide overflow for better appearance */
+}
+
+#tshirt-backgroundpicture {
+    width: 100%; /* Make the T-shirt image responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Drawing Area Styles */
+.drawing-area {
+    position: absolute; /* Position relative to the parent */
+    top: 0; /* Align with the top of the T-shirt */
+    left: 0; /* Align with the left of the T-shirt */
+    width: 100%; /* Full width of parent */
+    height: 100%; /* Full height of parent */
+    z-index: 10; /* Ensure it sits above the T-shirt image */
+}
+
+.canvas-container {
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    display: flex; /* Use flexbox to center */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+#tshirt-canvas {
+    max-width: 200px; /* Limit canvas width */
+    max-height: 400px; /* Limit canvas height */
+    border: 1px solid #ccc; /* Optional border for visibility */
+}
+
+/* Function Button Styles */
+button {
+    background: #007bff; /* Bootstrap primary color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #0056b3; /* Darker on hover */
+}
+
+/* Form Element Styles */
+label {
+    display: block; /* Block level for labels */
+    margin-top: 10px;
+}
+
+input, select {
+    width: calc(100% - 20px); /* Full width inputs */
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc; /* Border for inputs */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Utility Classes */
+.text-center {
+    text-align: center; /* Center text utility */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    #tshirt-div {
+        width: 95%; /* Adjust width for smaller screens */
+    }
+}
