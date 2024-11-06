@@ -15,8 +15,8 @@ def projects(request):
     return render(request, 'projects.html')
 
 def about(request):
-    return render(about, 'about.html')
+    return render(request, 'about.html')
 
-def login(request):
-    return render(login, 'login.html')
+def signin(request):
+    return render(request, 'signin.html')
  
