@@ -17,30 +17,109 @@ body {
 
 /* Header Styles */
 header {
-    background: #343a40; /* Dark background */
-    color: white;
+    background: #fff; /* Light background */
+    color: #333; /* Dark text */
     padding: 20px 0;
-    text-align: center;
-    width: 100%; /* Make header full width */
+    width: 100%;
+    text-align: left; /* Align title to the left */
+    font-weight: bold;
 }
 
 /* Navigation Styles */
 nav {
-    background: #495057; /* Darker nav background */
-    text-align: center;
-    padding: 10px 0;
-    width: 100%; /* Make nav full width */
+    background: #fff; /* Match header background */
+    color: #333; /* Darker text */
+    display: flex;
+    justify-content: flex-end; /* Align to the right */
+    padding: 10px 20px;
+    width: 55%; /* Make nav full width */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+/* Main navigation bar container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffffff; /* Adjust to match background */
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* Main navigation bar container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffffff; /* Adjust to match background */
+    border-bottom: 1px solid #e0e0e0;
+    list-style-type: none; /* Remove bullet points */
+}
+
+/* Logo or Title on the left */
+.navbar .logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #0000ff; /* Blue color for the title */
+    text-decoration: none;
+}
+
+/* Style for the header title */
+.header-title {
+    color: #0000ff; /* Blue color for the title */
+    font-size: 24px; /* Adjust the size as needed */
+    font-weight: bold; /* Makes the title bold */
+    text-align: left; /* Center the title if desired */
+}
+
+
+/* Navigation links on the right */
+.navbar .nav-links {
+    display: flex;
+    gap: 15px;
+}
+
+.navbar .nav-item {
+    list-style: none;
+}
+
+.navbar .nav-link {
+    text-decoration: none;
+    font-size: 16px;
+    color: #555555; /* Gray color for links */
+    font-weight: 500;
+}
+
+.navbar .nav-link:hover {
+    color: #000000; /* Darker color on hover */
+}
+
+
+
+/* Remove list styling for navigation */
+nav ul {
+    list-style-type: none; /* Remove bullets */
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 10px; /* Add spacing between links */
 }
 
 nav a {
-    color: #ffffff; /* White text */
+    color: #0000FF; /* Darker text */
     text-decoration: none;
     padding: 10px 15px;
     transition: background 0.3s;
+    font-weight: bold;
 }
 
 nav a:hover {
-    background: #6c757d; /* Lighter gray on hover */
+    background: #f0f0f0; /* Light gray on hover */
+    border-radius: 5px; /* Rounded hover effect */
 }
 
 /* T-Shirt Div Styles */
@@ -84,9 +163,9 @@ nav a:hover {
     border: 1px solid #ccc; /* Optional border for visibility */
 }
 
-/* Function Button Styles */
+/* Button Styles */
 button {
-    background: #007bff; /* Bootstrap primary color */
+    background: #007bff; /* Primary button color */
     color: white;
     border: none;
     border-radius: 5px;
@@ -96,7 +175,7 @@ button {
 }
 
 button:hover {
-    background: #0056b3; /* Darker on hover */
+    background: #0056b3; /* Darker hover color */
 }
 
 /* Form Element Styles */

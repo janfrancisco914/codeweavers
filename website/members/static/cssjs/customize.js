@@ -75,16 +75,27 @@ document.getElementById('add-text-btn').addEventListener('click', function() {
     var textInput = document.getElementById('text-input').value;
     var font = document.getElementById('font-select').value;
     var fontSize = parseInt(document.getElementById('font-size').value);
+    var textColor = document.getElementById('text-color').value; // New text color input
 
     var text = new fabric.Text(textInput, {
         fontFamily: font,
         fontSize: fontSize,
+        fill: textColor, // Set the initial text color
         left: 100,
         top: 100
     });
 
     canvas.add(text);
     canvas.renderAll();
+});
+
+// Update color of selected text object
+document.getElementById("text-color").addEventListener("input", function() {
+    var activeObject = canvas.getActiveObject();
+    if (activeObject && activeObject.type === 'text') {
+        activeObject.set("fill", this.value); // Update color of selected text
+        canvas.renderAll();
+    }
 });
 
 function updateBrushColor(color) {
