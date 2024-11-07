@@ -20,3 +20,5 @@ def about(request):
 def signin(request):
     return render(request, 'signin.html')
  
+def store(request):
+    return render(request, 'store.html')
